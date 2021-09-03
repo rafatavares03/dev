@@ -37,3 +37,35 @@ body {
 .header-container a:hover {
     color: #9a36ec;
 }
+
+.intro {
+    height: calc(100vh - 60px);
+    background-color: #000;
+}
+
+.intro-container {
+    max-width: 1140px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-photo {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+
+.social a {
+}
+
+.social a > img {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
