@@ -1,0 +1,16 @@
+@mixin flex-box($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin max-width($max: 1140px) {
+    max-width: $max;
+    margin: auto;
+}
+
+@mixin reset-a-style($color: #fff) {
+    text-decoration: none;
+    color: $color;
+}
