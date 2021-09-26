@@ -8,6 +8,7 @@
 
 body {
   font-family: "Open-sans", sans-serif;
+  color: #fff;
 }
 
 .header {
@@ -37,7 +38,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #fff;
+  color: inherit;
   text-transform: uppercase;
   font-size: 15px;
   padding: 10px;
@@ -47,5 +48,41 @@ body {
 
 .header a:hover {
   color: #9a36ec;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 60px);
+  background-color: #000;
+}
+
+.home .my-photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 0px 10px 1px #8707F0;
+          box-shadow: 0px 0px 10px 1px #8707F0;
+  -webkit-transition: -webkit-box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
+  transition: -webkit-box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
+  transition: box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
+  transition: box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s, -webkit-box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
+}
+
+.home .my-photo:hover {
+  -webkit-box-shadow: 0px 0px 20px 1px #8707F0;
+          box-shadow: 0px 0px 20px 1px #8707F0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
     margin: auto;
 }
 
-@mixin reset-a-style($color: #fff) {
+@mixin reset-a-style($color: inherit) {
     text-decoration: none;
     color: $color;
 }
