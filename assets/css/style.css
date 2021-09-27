@@ -91,7 +91,7 @@ body {
 }
 
 .home h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 300;
   margin: 5px 0px;
   color: #ccc;
@@ -136,5 +136,34 @@ body {
 
 .social img:hover {
   background-color: #6d03f8;
+}
+
+.about {
+  height: 200vh;
+  padding: 50px 0px;
+  border-top: solid 3px #8707F0;
+  border-bottom: solid 3px #8707F0;
+  background-color: #222;
+}
+
+.about .about-container {
+  max-width: 1140px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.about-text {
+  max-width: 400px;
+  line-height: 30px;
+}
+
+.about-text h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
