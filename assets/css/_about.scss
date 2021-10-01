@@ -1,5 +1,4 @@
 .about {
-    height: 200vh;
     padding: 50px 0px;
     border-top: $purple-border;
     border-bottom: $purple-border;
@@ -7,22 +6,48 @@
 
     .about-container {
         @include max-width;
+        @include about-imgs;
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        row-gap: 100px;
     }
 
-    img {
-        
+    h1 {
+        margin-bottom: 30px;
     }
 }
+
 
 .about-text {
     max-width: 400px;
     line-height: 30px;
 
+
     h1 {
         font-size: 50px;
-        margin-bottom: 30px;
+    }
+}
+
+
+.technology {
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .technologies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+}
+
+.tools {
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
     }
 }

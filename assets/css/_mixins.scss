@@ -14,3 +14,11 @@
     text-decoration: none;
     color: $color;
 }
+
+@mixin about-imgs {
+    img {
+        height: 120px;
+        width: auto;
+        margin: auto;
+    }
+}
