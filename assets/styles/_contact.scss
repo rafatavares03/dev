@@ -9,13 +9,31 @@
         font-weight: $font-thin;
     }
 
-
-    img {
-        @include icon-imgs(auto, 35px, transparent);
-        margin-right: 10px;
+    .links {
+        margin-top: 50px;
     }
 
-    a {
-        @include reset-a-style($-grey);
+    .link {
+        @include flex-box($justify: flex-start);
+        width: 300px;
+        margin: 10px auto;
+
+
+        img {
+            @include icon-imgs(auto, 35px, transparent);
+            margin-right: 10px;
+        }
+    
+        a {
+            @include reset-a-style($grey);
+            text-align: center;
+            border: solid 1px transparent;
+
+            &:hover {
+                border-bottom: solid 1px $grey;
+            }
+        }
     }
+
+
 }

@@ -51,7 +51,7 @@
     }
 
     img {
-        @include icon-imgs(35px, 35px, $light-grey);
+        @include icon-imgs(35px, 35px, $grey);
         transition: background-color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
         &:hover {
             background-color: $social-purple;
