@@ -165,8 +165,8 @@ body {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (400px)[2];
-      grid-template-rows: repeat(2, 400px);
+  -ms-grid-rows: 400px 400px;
+      grid-template-rows: 400px 400px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   row-gap: 100px;
@@ -177,7 +177,7 @@ body {
 .about .about-container img {
   height: 120px;
   width: auto;
-  margin: auto;
+  margin: 10px 0px;
 }
 
 .about h1 {
@@ -198,6 +198,10 @@ body {
   font-size: 50px;
 }
 
+.about-pretensions {
+  text-align: right;
+}
+
 .technology {
   background-color: #3335;
   border-radius: 3px;
@@ -211,11 +215,22 @@ body {
 }
 
 .technology .technologies {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  row-gap: 30px;
+  max-height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .tools {
@@ -231,14 +246,31 @@ body {
 }
 
 .tools .tools-imgs {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  row-gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.about-pretensions {
-  text-align: right;
+.projects {
+  background-color: #000;
+  border-bottom: solid 3px #8707F0;
+  text-align: center;
+  /* mudar depois */
+  padding: 100px 0px;
+  /* mudar depois */
+}
+
+.contact {
+  background-color: #222;
 }
 /*# sourceMappingURL=style.css.map */
