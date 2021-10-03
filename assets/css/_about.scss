@@ -18,20 +18,21 @@
         margin-top: 20px;
         margin-bottom: 30px;
     }
+
+    p {
+        font-size: 16px;
+        font-weight: $font-thin;
+    }
 }
 
 
-.about-text {
+.about-presentation {
     line-height: 30px;
-    
+
     
     h1 {
         font-size: 50px;
     }
-    
-    /*p {
-        max-width: 400px;
-    }*/
 }
 
 
@@ -64,4 +65,10 @@
         grid-template-columns: 1fr;
         row-gap: 30px;
     }
+}
+
+.about-pretensions {
+    @extend .about-presentation;
+
+    text-align: right;
 }
