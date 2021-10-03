@@ -26,7 +26,6 @@
     
         a {
             @include reset-a-style($grey);
-            text-align: center;
             border: solid 1px transparent;
 
             &:hover {
