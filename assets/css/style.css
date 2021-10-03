@@ -75,15 +75,8 @@ body {
   margin-bottom: 25px;
   -webkit-box-shadow: 0px 0px 10px 1px #8707F0;
           box-shadow: 0px 0px 10px 1px #8707F0;
-  -webkit-transition: -webkit-box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
-  transition: -webkit-box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
-  transition: box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
-  transition: box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s, -webkit-box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
-}
-
-.home .my-photo:hover {
-  -webkit-box-shadow: 0px 0px 20px 1px #8707F0;
-          box-shadow: 0px 0px 20px 1px #8707F0;
+  -webkit-animation: expand-shadow 1s linear infinite alternate;
+          animation: expand-shadow 1s linear infinite alternate;
 }
 
 .home h1 {
@@ -100,6 +93,28 @@ body {
 .home p {
   font-weight: 200;
   color: #ccc;
+}
+
+@-webkit-keyframes expand-shadow {
+  from {
+    -webkit-box-shadow: 0px 0px 10px 1px #8707F0;
+            box-shadow: 0px 0px 10px 1px #8707F0;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 50px 1px #8707F0;
+            box-shadow: 0px 0px 50px 1px #8707F0;
+  }
+}
+
+@keyframes expand-shadow {
+  from {
+    -webkit-box-shadow: 0px 0px 10px 1px #8707F0;
+            box-shadow: 0px 0px 10px 1px #8707F0;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 50px 1px #8707F0;
+            box-shadow: 0px 0px 50px 1px #8707F0;
+  }
 }
 
 .social {

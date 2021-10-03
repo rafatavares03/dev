@@ -9,10 +9,7 @@
         border-radius: 50%;
         margin-bottom: 25px;
         box-shadow: 0px 0px 10px 1px $strong-purple;
-        transition: box-shadow 1s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
-        &:hover {
-            box-shadow: 0px 0px 20px 1px $strong-purple;
-        }
+        animation: expand-shadow 1s linear infinite alternate;
     }
 
     h1 {
@@ -31,6 +28,18 @@
         color: $light-grey;
     }
 }
+
+
+@keyframes expand-shadow {
+    from {
+        box-shadow: 0px 0px 10px 1px $strong-purple;
+    }
+
+    to {
+        box-shadow: 0px 0px 50px 1px $strong-purple;
+    }
+}
+
 
 .social {
     @include flex-box;
