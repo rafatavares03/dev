@@ -10,12 +10,20 @@
     margin: auto;
 }
 
-@mixin reset-a-style($color: inherit) {
+@mixin reset-a-style($color: $white) {
     text-decoration: none;
     color: $color;
 }
 
-@mixin about-imgs {
+@mixin icon-imgs($height, $width, $color) {
+    height: $height;
+    width: $width;
+    padding: 1px;
+    border-radius: 3px;
+    background-color: $color;
+}
+
+@mixin tech-imgs {
     img {
         height: 120px;
         width: auto;

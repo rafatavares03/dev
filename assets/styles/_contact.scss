@@ -1,0 +1,21 @@
+.contact {
+    background-color: $dark-grey;
+    color: $light-grey;
+    padding: 100px 0px;
+    text-align: center;
+
+
+    h3 {
+        font-weight: $font-thin;
+    }
+
+
+    img {
+        @include icon-imgs(auto, 35px, transparent);
+        margin-right: 10px;
+    }
+
+    a {
+        @include reset-a-style($-grey);
+    }
+}
