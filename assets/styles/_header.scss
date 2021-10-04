@@ -1,4 +1,6 @@
 .header {
+    position: sticky;
+    top: 0;
     height: 60px;
     background-color: $dark-grey;
     border-bottom: $purple-border;
@@ -6,8 +8,13 @@
 
     .header-container {
         @include max-width;
-        @include flex-box($justify: flex-end);
+        @include flex-box($justify: space-between);
         height: 100%;
+    }
+
+    .menu-button {
+        height: 40px;
+        width: 40px;
     }
 
 

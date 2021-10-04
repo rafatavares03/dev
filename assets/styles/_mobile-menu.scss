@@ -1,0 +1,23 @@
+.mobile-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: #8707F033;
+
+    .menu-container {
+        @include flex-box($direction: column);
+        background-color: $black;
+        height: 100%;
+        width: 80vw;
+    }
+
+    a {
+        @include reset-a-style;
+        display: inline-block;
+        text-transform: uppercase;
+        margin: 15px 0px;
+    }
+}
