@@ -6,6 +6,7 @@
     bottom: 0;
     z-index: 10;
     background-color: #8707F033;
+    display: none;
 
     .menu-container {
         @include flex-box($direction: column);
@@ -20,4 +21,8 @@
         text-transform: uppercase;
         margin: 15px 0px;
     }
+}
+
+.mobile-menu.open {
+    display: block;
 }

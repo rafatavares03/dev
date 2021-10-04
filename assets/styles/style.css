@@ -66,6 +66,7 @@ body {
   bottom: 0;
   z-index: 10;
   background-color: #8707F033;
+  display: none;
 }
 
 .mobile-menu .menu-container {
@@ -93,6 +94,10 @@ body {
   display: inline-block;
   text-transform: uppercase;
   margin: 15px 0px;
+}
+
+.mobile-menu.open {
+  display: block;
 }
 
 .home {
