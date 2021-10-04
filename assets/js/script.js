@@ -6,3 +6,9 @@ document.querySelector('#menuButton').addEventListener('click', () => {
         mobileMenu.classList.add('open');
     }
 });
+
+document.querySelector('#mobileMenu').addEventListener('click', (e) => {
+    if (e.target.classList.contains('open')) {
+        document.querySelector('.mobile-menu.open').classList.remove('open');
+    }
+})

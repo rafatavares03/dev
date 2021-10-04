@@ -8,13 +8,14 @@
 
     .header-container {
         @include max-width;
-        @include flex-box($justify: space-between);
+        @include flex-box($justify: flex-end);
         height: 100%;
     }
 
     .menu-button {
         height: 40px;
         width: 40px;
+        display: none;
     }
 
 
