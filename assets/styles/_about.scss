@@ -4,6 +4,7 @@
     border-bottom: $purple-border-thin;
     background-color: $dark-grey;
 
+
     .about-container {
         @include max-width;
         @include tech-imgs(120px);
@@ -12,6 +13,17 @@
         grid-template-columns: 1fr 1fr;
         row-gap: 100px;
         column-gap: 50px;
+    }
+
+    .about-presentation {
+        @include text-and-h1(left, 50px);
+        line-height: $text-height;
+    }
+    
+    
+    .about-pretensions {
+        @include text-and-h1(right, 50px);
+        line-height: $text-height;
     }
 
     h1 {
@@ -27,30 +39,9 @@
 }
 
 
-.about-presentation {
-    line-height: 30px;
-
-    
-    h1 {
-        font-size: 50px;
-    }
-}
-
-
-.about-pretensions {
-    @extend .about-presentation;
-
-    text-align: right;
-}
-
-
 .technology {
     @include info-box;
-    text-align: center;
-
-    h1 {
-        font-size: 40px;
-    }
+    @include text-and-h1(center, 40px);
     
     .technologies {
         max-height: 280px;
@@ -62,11 +53,7 @@
 
 .tools {
     @include info-box;
-    text-align: center;
-
-    h1 {
-        font-size: 40px;
-    }
+    @include text-and-h1(center, 40px);
 
     .tools-imgs {
         @include flex-box(column, space-between, center);
