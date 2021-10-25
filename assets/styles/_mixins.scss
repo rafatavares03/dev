@@ -1,128 +1,127 @@
 @mixin flex-box($direction: row, $justify: center, $align: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
 }
 
 @mixin max-width($max: 1140px) {
-    max-width: $max;
-    margin: auto;
+  margin: auto;
+  max-width: $max;
 }
 
 @mixin reset-a-style($color: $white) {
-    text-decoration: none;
-    color: $color;
+  color: $color;
+  text-decoration: none;
 }
 
 @mixin icon-imgs($height, $width, $color) {
-    height: $height;
-    width: $width;
-    padding: 1px;
-    border-radius: 3px;
-    background-color: $color;
+  background-color: $color;
+  border-radius: 3px;
+  height: $height;
+  padding: 1px;
+  width: $width;
 }
 
 @mixin tech-imgs($height) {
-    img {
-        height: $height;
-        width: auto;
-        margin: 10px 0px;
-    }
+  img {
+    height: $height;
+    margin: 10px 0px;
+    width: auto;
+  }
 }
 
 @mixin info-box {
-    background-color: #3335;
-    border-radius: 3px;
-    box-shadow: 0px 0px 10px 1px $strong-purple;
+  background-color: #3335;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 1px $strong-purple;
 }
 
-@mixin text-and-h1($align ,$size) {
-    text-align: $align;
+@mixin text-and-h1($align, $size) {
+  text-align: $align;
 
-
-    h1 {
-        font-size: $size;
-    }
+  h1 {
+    font-size: $size;
+  }
 }
 
 @mixin tech-boxes-media {
-    width: 85vw;
-    margin-top: 50px;
+  margin-top: 50px;
+  width: 85vw;
 }
 
 @mixin mediaquery-laptop {
-    @media screen and (max-width: $laptop) {
-        .about {
-            padding: 50px;
+  @media screen and (max-width: $laptop) {
+    .about {
+      padding: 50px;
 
-            .about-container {
-                grid-template-rows: 1fr 1fr;
-            }
-        }
+      .about-container {
+        grid-template-rows: 1fr 1fr;
+      }
     }
+  }
 }
 
 @mixin mediaquery-tablet {
-    @media screen and (max-width: $tablet) {
-        .header {
-            padding: 0px 30px;
+  @media screen and (max-width: $tablet) {
+    .header {
+      padding: 0px 30px;
 
-            .header-container {
-                @include flex-box($justify: flex-start);
-                margin: 0;
-            }
-    
-            .menu-button {
-                display: block;
-            }
-    
-            nav {
-                display: none;
-            }
-        }
+      .header-container {
+        @include flex-box($justify: flex-start);
+        margin: 0;
+      }
 
-        .about {
-            .about-container {
-                @include flex-box($direction: column);
-                @include tech-imgs(100px);
-                row-gap: 0;
-                column-gap: 0;
-            }
+      .menu-button {
+        display: block;
+      }
 
-            .technology {
-                @include tech-boxes-media;
-                padding-bottom: 20px;
-            }
-
-            .tools {
-                @include tech-boxes-media;
-                padding-bottom: 20px;
-            }
-        }
+      nav {
+        display: none;
+      }
     }
+
+    .about {
+      .about-container {
+        @include flex-box($direction: column);
+        @include tech-imgs(100px);
+        column-gap: 0;
+        row-gap: 0;
+      }
+
+      .technology {
+        @include tech-boxes-media;
+        padding-bottom: 20px;
+      }
+
+      .tools {
+        @include tech-boxes-media;
+        padding-bottom: 20px;
+      }
+    }
+  }
 }
 
 @mixin mediaquery-mobile {
-    @media screen and (max-width: $mobile) {
-        .about {
-            padding: 50px 20px;
+  @media screen and (max-width: $mobile) {
+    .about {
+      padding: 50px 20px;
 
-            .about-pretensions {
-                @include text-and-h1(right, 40px);
-            }
+      .about-pretensions {
+        @include text-and-h1(right, 40px);
+      }
 
-            .technology {
-                @include text-and-h1(center, 30px);
-            }
+      .technology {
+        @include text-and-h1(center, 30px);
+      }
 
-            .tools {
-                @include text-and-h1(center, 30px);
-            }
-        }
-
-        .contact {
-            padding: 100px 20px;
-        }
+      .tools {
+        @include text-and-h1(center, 30px);
+      }
     }
+
+    .contact {
+      padding: 100px 20px;
+    }
+  }
 }

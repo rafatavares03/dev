@@ -1,60 +1,58 @@
 .home {
-    @include flex-box($direction: column);
-    height: calc(100vh - 60px);
-    background-color: $black;
+  @include flex-box($direction: column);
+  background-color: $black;
+  height: calc(100vh - 60px);
 
-    .my-photo {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        margin-bottom: 25px;
-        box-shadow: 0px 0px 10px 1px $strong-purple;
-        animation: expand-shadow 1s linear infinite alternate;
-    }
+  .my-photo {
+    animation: expand-shadow 1s linear infinite alternate;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 1px $strong-purple;
+    height: 200px;
+    margin-bottom: 25px;
+    width: 200px;
+  }
 
-    h1 {
-        font-size: 1.8rem;
-    }
+  h1 {
+    font-size: 1.8rem;
+  }
 
-    h3 {
-        font-size: 1.3rem;
-        font-weight: $font-thin;
-        margin: 8px 0px;
-        color: $light-grey;
-    }
+  h3 {
+    color: $light-grey;
+    font-size: 1.3rem;
+    font-weight: $font-thin;
+    margin: 8px 0px;
+  }
 
-    p {
-        font-weight: $font-thin;
-        color: $light-grey;
-    }
+  p {
+    color: $light-grey;
+    font-weight: $font-thin;
+  }
 }
-
 
 @keyframes expand-shadow {
-    from {
-        box-shadow: 0px 0px 10px 1px $strong-purple;
-    }
+  from {
+    box-shadow: 0px 0px 10px 1px $strong-purple;
+  }
 
-    to {
-        box-shadow: 0px 0px 50px 1px $strong-purple;
-    }
+  to {
+    box-shadow: 0px 0px 50px 1px $strong-purple;
+  }
 }
 
-
 .social {
-    @include flex-box;
-    margin-top: 30px;
+  @include flex-box;
+  margin-top: 30px;
 
-    a {
-        height: 35px;
-        margin: 0px 5px;
-    }
+  a {
+    height: 35px;
+    margin: 0px 5px;
+  }
 
-    img {
-        @include icon-imgs(35px, 35px, $grey);
-        transition: background-color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
-        &:hover {
-            background-color: $social-purple;
-        }
+  img {
+    @include icon-imgs(35px, 35px, $grey);
+    transition: background-color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
+    &:hover {
+      background-color: $social-purple;
     }
+  }
 }

@@ -1,32 +1,30 @@
 .header {
-    position: sticky;
-    top: 0;
-    height: 60px;
-    background-color: $dark-grey;
-    border-bottom: $purple-border;
+  background-color: $dark-grey;
+  border-bottom: $purple-border;
+  height: 60px;
+  position: sticky;
+  top: 0;
 
+  .header-container {
+    @include max-width;
+    @include flex-box($justify: flex-end);
+    height: 100%;
+  }
 
-    .header-container {
-        @include max-width;
-        @include flex-box($justify: flex-end);
-        height: 100%;
+  .menu-button {
+    display: none;
+    height: 40px;
+    width: 40px;
+  }
+
+  a {
+    @include reset-a-style;
+    font-size: 15px;
+    padding: 10px;
+    transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
+    text-transform: uppercase;
+    &:hover {
+      color: $text-purple;
     }
-
-    .menu-button {
-        height: 40px;
-        width: 40px;
-        display: none;
-    }
-
-
-    a {
-        @include reset-a-style;
-        text-transform: uppercase;
-        font-size: 15px;
-        padding: 10px;
-        transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
-        &:hover{
-            color: $text-purple;
-        }
-    }
+  }
 }

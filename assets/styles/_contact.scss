@@ -1,39 +1,35 @@
 .contact {
-    background-color: $dark-grey;
-    color: $light-grey;
-    padding: 100px 0px;
-    text-align: center;
+  background-color: $dark-grey;
+  color: $light-grey;
+  padding: 100px 0px;
+  text-align: center;
 
+  h3 {
+    font-weight: $font-thin;
+    line-height: $text-height;
+  }
 
-    h3 {
-        font-weight: $font-thin;
-        line-height: $text-height;
+  .links {
+    margin-top: 50px;
+  }
+
+  .link {
+    @include flex-box($justify: flex-start);
+    margin: 10px auto;
+    width: 300px;
+
+    img {
+      @include icon-imgs(auto, 35px, transparent);
+      margin-right: 10px;
     }
 
-    .links {
-        margin-top: 50px;
+    a {
+      @include reset-a-style($grey);
+      border: solid 1px transparent;
+
+      &:hover {
+        border-bottom: solid 1px $grey;
+      }
     }
-
-    .link {
-        @include flex-box($justify: flex-start);
-        width: 300px;
-        margin: 10px auto;
-
-
-        img {
-            @include icon-imgs(auto, 35px, transparent);
-            margin-right: 10px;
-        }
-    
-        a {
-            @include reset-a-style($grey);
-            border: solid 1px transparent;
-
-            &:hover {
-                border-bottom: solid 1px $grey;
-            }
-        }
-    }
-
-
+  }
 }

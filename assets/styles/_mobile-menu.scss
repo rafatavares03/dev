@@ -1,28 +1,28 @@
 .mobile-menu {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    background-color: #8707F033;
-    display: none;
+  background-color: #8707f033;
+  bottom: 0;
+  display: none;
+  left: 0;
+  right: 0;
+  position: fixed;
+  top: 60px;
+  z-index: 10;
 
-    .menu-container {
-        @include flex-box($direction: column);
-        background-color: $black;
-        height: 100%;
-        width: 80vw;
-    }
+  .menu-container {
+    @include flex-box($direction: column);
+    background-color: $black;
+    height: 100%;
+    width: 80vw;
+  }
 
-    a {
-        @include reset-a-style;
-        display: inline-block;
-        text-transform: uppercase;
-        margin: 15px 0px;
-    }
+  a {
+    @include reset-a-style;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+  }
 }
 
 .mobile-menu.open {
-    display: block;
+  display: block;
 }

@@ -1,70 +1,66 @@
 .about {
-    padding: 50px 0px;
-    border-top: $purple-border-thin;
-    border-bottom: $purple-border-thin;
-    background-color: $dark-grey;
+  background-color: $dark-grey;
+  border-top: $purple-border-thin;
+  border-bottom: $purple-border-thin;
+  padding: 50px 0px;
 
+  .about-container {
+    @include max-width;
+    @include tech-imgs(120px);
+    column-gap: 50px;
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+  }
 
-    .about-container {
-        @include max-width;
-        @include tech-imgs(120px);
-        display: grid;
-        grid-template-rows: 400px 400px;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 100px;
-        column-gap: 50px;
-    }
+  .about-presentation {
+    @include text-and-h1(left, 50px);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    line-height: $text-height;
+  }
 
-    .about-presentation {
-        @include text-and-h1(left, 50px);
-        line-height: $text-height;
-        grid-column: 1 / 2;
-        grid-row: 1 / 3;
-    }
-    
-    
-    .about-pretensions {
-        @include text-and-h1(right, 50px);
-        line-height: $text-height;
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
+  .about-pretensions {
+    @include text-and-h1(right, 50px);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    line-height: $text-height;
+  }
 
-    h1 {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
+  h1 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
 
-    p {
-        font-size: 16px;
-        font-weight: $font-thin;
-        color: $light-grey;
-    }
+  p {
+    color: $light-grey;
+    font-size: 16px;
+    font-weight: $font-thin;
+  }
 }
-
 
 .technology {
-    @include info-box;
-    @include text-and-h1(center, 40px);
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    
-    .technologies {
-        height: 80%;
-        max-height: 280px;
-        @include flex-box(column, space-between, center);
-        flex-wrap: wrap;
-    }
+  @include info-box;
+  @include text-and-h1(center, 40px);
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  .technologies {
+    @include flex-box(column, space-between, center);
+    flex-wrap: wrap;
+    height: 80%;
+    max-height: 280px;
+  }
 }
 
-
 .tools {
-    @include info-box;
-    @include text-and-h1(center, 40px);
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+  @include info-box;
+  @include text-and-h1(center, 40px);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 
-    .tools-imgs {
-        @include flex-box(column, space-between, center);
-    }
+  .tools-imgs {
+    @include flex-box(column, space-between, center);
+  }
 }
