@@ -6,15 +6,19 @@
   top: 0;
 
   .header-container {
-    @include max-width;
-    @include flex-box($justify: flex-end);
+    @include max-width(90vw);
+    @include flex-box($justify: flex-start);
     height: 100%;
   }
 
   .menu-button {
-    display: none;
+    display: block;
     height: 40px;
     width: 40px;
+  }
+
+  nav {
+    display: none;
   }
 
   a {

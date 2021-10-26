@@ -2,8 +2,24 @@
   background-color: $dark-grey;
   border-top: $border-thin;
   border-bottom: $border-thin;
-  padding: 50px 0px;
+  padding: 2.5rem 1rem;
 
+  .about-container {
+    @include flex-box($direction: column);
+    @include tech-imgs(100px);
+  }
+
+  .about-presentation {
+    @include text-and-h1(let, $about-text-h1-font-size);
+    line-height: $text-height;
+  }
+
+  .about-pretensions {
+    @include text-and-h1(right, $about-text-h1-font-size);
+    line-height: $text-height;
+  }
+
+  /*
   .about-container {
     @include max-width;
     @include tech-imgs(120px);
@@ -26,21 +42,35 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     line-height: $text-height;
-  }
+  }*/
 
-  h1 {
-    margin-bottom: 30px;
-    margin-top: 20px;
-  }
-
-  p {
-    color: $light-grey;
-    font-size: 16px;
-    font-weight: $font-thin;
-  }
 }
 
 .technology {
+  @include info-box;
+  @include text-and-h1(center, $about-box-h1-font-size);
+  margin-top: 2rem;
+  width: 100%;
+
+  .technologies {
+    @include flex-box(column, space-between, center);
+    flex-wrap: wrap;
+    max-height: 280px;
+  }
+}
+
+.tools {
+  @include info-box;
+  @include text-and-h1(center, $about-box-h1-font-size);
+  margin-top: 2rem;
+  width: 100%;
+
+  .tools-imgs {
+    @include flex-box(column, space-between, center);
+  }
+}
+
+/*.technology {
   @include info-box;
   @include text-and-h1(center, 40px);
   grid-column: 1 / 2;
@@ -64,3 +94,4 @@
     @include flex-box(column, space-between, center);
   }
 }
+*/

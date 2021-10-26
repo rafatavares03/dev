@@ -19,7 +19,7 @@ $no-border: 0;
 $no-margin: 0;
 $no-padding: 0;
 $no-txt-decoration: none;
-$text-height: 2rem;
+$text-height: calc(1.5rem + 0.5vw);
 
 
 
@@ -33,14 +33,59 @@ $border-thin: solid 1px $strong-eletric-violet;
 $a-color-hover: $dark-eletric-violet;
 
 
-$icon-border-radius: 0.3rem;
-$icon-padding: 0.1rem;
+$about-box-h1-font-size: calc(2.1rem + 1vw);
+$about-h1-margin: 1.2rem 0rem 1.5rem 0rem;
+$about-text-color: $light-grey;
+$about-text-font-size: calc(0.8rem + 0.4vw);
+$about-text-h1-font-size: calc(2.2rem + 1vw);
+
+
+$contact-bg-color: $dark-grey;
+$contact-color: $light-grey;
+$contact-padding: 8rem 1rem;
+$contact-text-align: center;
+
+
+$footer-bg-color: $black;
+$footer-color: $grey;
+$footer-font-size: calc(0.8rem + 0.5vw);
+$footer-padding: 3rem 0rem;
+$footer-text-align: center;
+
+
+$home-h1-font-size: calc(1.6rem + 0.5vw);
+
+
+$home-h3-color: $light-grey;
+$home-h3-font-size: calc(1.2rem + 0.3vw);
+$home-h3-margin: 0.5rem 0rem;
+
+
+$home-p-color: $light-grey;
+$home-p-font-size: calc(0.8rem + 0.3vw);
+
+
+$home-photo-animation: expand-shadow 1s linear infinite alternate;
+$home-photo-border-radius: 50%;
+$home-photo-height: auto;
+$home-photo-margin: 1.3rem;
+$home-photo-width: calc(8rem + 5vw);
+
+
+$icon-border-radius: calc(0.3rem + 0.2vw);
+$icon-padding: calc(1px + 0.05vw);
 
 
 $info-box-bg-color: $transparent-dark-grey;
+$info-box-border-radius: 0.3rem;
+$info-box-shadow: 0px 0px 10px 1px $strong-eletric-violet;
+
+
+$link-a-font-size: calc(0.8rem + 0.3vw);
 
 
 $social-bg-color-hover: $dark-eletric-violet;
+$social-img-height-width: calc(2.1rem + 1vw);
 
 
 $tech-imgs-margin: 0.9rem;
@@ -50,3 +95,10 @@ $tech-imgs-margin: 0.9rem;
 $laptop: 1100px;
 $tablet: 780px;
 $mobile: 480px;
+
+/* 
+border-radius: calc(0.3rem + 0.2vw);
+height: calc(2.5rem + 1vw);
+padding: calc(1px + 0.05vw);
+width: calc(2.5rem + 1vw);
+*/
