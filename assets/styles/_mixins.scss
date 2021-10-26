@@ -12,29 +12,29 @@
 
 @mixin reset-a-style($color: $white) {
   color: $color;
-  text-decoration: none;
+  text-decoration: $no-txt-decoration;
 }
 
 @mixin icon-imgs($height, $width, $color) {
   background-color: $color;
-  border-radius: 3px;
+  border-radius: $icon-border-radius;
   height: $height;
-  padding: 1px;
+  padding: $icon-padding;
   width: $width;
 }
 
 @mixin tech-imgs($height) {
   img {
     height: $height;
-    margin: 10px 0px;
+    margin: $tech-imgs-margin;
     width: auto;
   }
 }
 
 @mixin info-box {
-  background-color: #3335;
+  background-color: $info-box-bg-color;
   border-radius: 3px;
-  box-shadow: 0px 0px 10px 1px $strong-purple;
+  box-shadow: 0px 0px 10px 1px $strong-eletric-violet;
 }
 
 @mixin text-and-h1($align, $size) {

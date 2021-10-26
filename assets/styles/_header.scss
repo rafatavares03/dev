@@ -1,6 +1,6 @@
 .header {
   background-color: $dark-grey;
-  border-bottom: $purple-border;
+  border-bottom: $border;
   height: 60px;
   position: sticky;
   top: 0;
@@ -24,7 +24,7 @@
     transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
     text-transform: uppercase;
     &:hover {
-      color: $text-purple;
+      color: $a-color-hover;
     }
   }
 }

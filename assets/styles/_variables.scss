@@ -1,25 +1,49 @@
-$social-purple: #6d03f8;
-$strong-purple: #8707F0;
-$text-purple: #9a36ec;
-
-
-
-$dark-grey: #222;
-$black: #000;
 $white: #fff;
 $grey: #aaa;
 $light-grey: #ccc;
+$light-eletric-violet: #9a36ec;
+$strong-eletric-violet: #8707F0;
+$dark-eletric-violet: #6d03f8;
+$transparent-dark-grey: #3335;
+$dark-grey: #222;
+$black: #000;
 
 
 
-$font-stack: 'Montserrat', sans-serif;;
+
+
+$box-sizing: border-box;
+$font-family: 'Montserrat', sans-serif;;
 $font-thin: 200;
-$text-height: 30px;
+$no-border: 0;
+$no-margin: 0;
+$no-padding: 0;
+$no-txt-decoration: none;
+$text-height: 2rem;
 
 
 
-$purple-border: solid 3px $strong-purple;
-$purple-border-thin: solid 1px $strong-purple;
+$border: solid 3px $strong-eletric-violet;
+$border-thin: solid 1px $strong-eletric-violet;
+
+
+
+
+
+$a-color-hover: $dark-eletric-violet;
+
+
+$icon-border-radius: 0.3rem;
+$icon-padding: 0.1rem;
+
+
+$info-box-bg-color: $transparent-dark-grey;
+
+
+$social-bg-color-hover: $dark-eletric-violet;
+
+
+$tech-imgs-margin: 0.9rem;
 
 
 
