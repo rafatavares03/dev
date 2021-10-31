@@ -101,6 +101,23 @@ body {
   top: 0;
 }
 
+.header nav {
+  display: none;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0rem 0.4rem;
+  -webkit-transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
+  transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
+  text-transform: uppercase;
+}
+
+.header a:hover {
+  color: #6d03f8;
+}
+
 .header .header-container {
   margin: auto;
   max-width: 90vw;
@@ -126,24 +143,6 @@ body {
   width: 40px;
 }
 
-.header nav {
-  display: none;
-}
-
-.header a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 10px;
-  -webkit-transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
-  transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
-  text-transform: uppercase;
-}
-
-.header a:hover {
-  color: #6d03f8;
-}
-
 .mobile-menu {
   background-color: #8707f033;
   bottom: 0;
@@ -153,6 +152,14 @@ body {
   position: fixed;
   top: 60px;
   z-index: 10;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.8rem 0rem;
+  text-transform: uppercase;
 }
 
 .mobile-menu .menu-container {
@@ -172,14 +179,6 @@ body {
   background-color: #000;
   height: 100%;
   width: 80vw;
-}
-
-.mobile-menu a {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  margin: 15px 0px;
-  text-transform: uppercase;
 }
 
 .mobile-menu.open {
@@ -267,7 +266,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .social a {
@@ -448,6 +447,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 280px;
 }
 
 /*.technology {
@@ -497,8 +499,19 @@ body {
   line-height: calc(1.5rem + 0.5vw);
 }
 
+.contact a {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
+  font-size: calc(0.8rem + 0.3vw);
+}
+
+.contact a:hover {
+  border-bottom: solid 1px #aaa;
+}
+
 .contact .links {
-  margin-top: 50px;
+  margin-top: 3rem;
 }
 
 .contact .link {
@@ -515,7 +528,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 10px auto;
+  margin: 0.7rem auto;
   width: 300px;
 }
 
@@ -525,25 +538,14 @@ body {
   height: auto;
   padding: calc(1px + 0.05vw);
   width: 35px;
-  margin-right: 10px;
-}
-
-.contact .link a {
-  color: #aaa;
-  text-decoration: none;
-  border: solid 1px transparent;
-  font-size: calc(0.8rem + 0.3vw);
-}
-
-.contact .link a:hover {
-  border-bottom: solid 1px #aaa;
+  margin-right: 0.7rem;
 }
 
 .footer {
   background-color: #000;
   border-top: solid 3px #8707F0;
   color: #aaa;
-  font-size: calc(0.8rem + 0.5vw);
+  font-size: calc(1rem + 0.3vw);
   padding: 3rem 0rem;
   text-align: center;
 }

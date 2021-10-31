@@ -1,9 +1,25 @@
 .header {
-  background-color: $dark-grey;
-  border-bottom: $border;
-  height: 60px;
-  position: sticky;
-  top: 0;
+  background-color: $header-bg-color;
+  border-bottom: $header-border;
+  height: $header-height;
+  position: $header-position;
+  top: $header-top;
+
+
+  nav {
+    display: none;
+  }
+
+  a {
+    @include reset-a-style;
+    padding: $header-a-padding;
+    transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
+    text-transform: $header-a-text-transform;
+    &:hover {
+      color: $a-color-hover;
+    }
+  }
+
 
   .header-container {
     @include max-width(90vw);
@@ -13,22 +29,7 @@
 
   .menu-button {
     display: block;
-    height: 40px;
-    width: 40px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  a {
-    @include reset-a-style;
-    font-size: 15px;
-    padding: 10px;
-    transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
-    text-transform: uppercase;
-    &:hover {
-      color: $a-color-hover;
-    }
+    height: $header-button-size;
+    width: $header-button-size;
   }
 }

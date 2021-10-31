@@ -1,6 +1,7 @@
 $white: #fff;
 $grey: #aaa;
 $light-grey: #ccc;
+$transparent-violet: #8707f033;
 $light-eletric-violet: #9a36ec;
 $strong-eletric-violet: #8707F0;
 $dark-eletric-violet: #6d03f8;
@@ -28,16 +29,32 @@ $border-thin: solid 1px $strong-eletric-violet;
 
 
 
-
-
 $a-color-hover: $dark-eletric-violet;
+
+
+
+
+
+$about-bg-color: $dark-grey;
+$about-border: $border-thin;
+$about-padding: 2.5rem 1rem;
 
 
 $about-box-h1-font-size: calc(2.1rem + 1vw);
 $about-h1-margin: 1.2rem 0rem 1.5rem 0rem;
+
+
 $about-text-color: $light-grey;
 $about-text-font-size: calc(0.8rem + 0.4vw);
 $about-text-h1-font-size: calc(2.2rem + 1vw);
+
+
+$body-font-family: $font-family;
+$body-color: $white;
+
+
+$boxes-margin: 2rem;
+$boxes-width: 100%;
 
 
 $contact-bg-color: $dark-grey;
@@ -46,11 +63,34 @@ $contact-padding: 8rem 1rem;
 $contact-text-align: center;
 
 
+$contact-a-border: solid 1px transparent;
+$contact-a-border-hover: solid 1px $grey;
+$contact-a-font-size: calc(0.8rem + 0.3vw);
+
+
 $footer-bg-color: $black;
 $footer-color: $grey;
-$footer-font-size: calc(0.8rem + 0.5vw);
+$footer-font-size: calc(1rem + 0.3vw);
 $footer-padding: 3rem 0rem;
 $footer-text-align: center;
+
+
+$header-bg-color: $dark-grey;
+$header-border: $border;
+$header-height: 60px;
+$header-position: sticky;
+$header-top: 0;
+
+
+$header-a-padding: 0rem 0.4rem;
+$header-a-text-transform: uppercase;
+
+
+$header-button-size: 40px;
+
+
+$home-min-height: calc(100vh - 60px);
+$home-padding: 1rem 0rem;
 
 
 $home-h1-font-size: calc(1.6rem + 0.5vw);
@@ -81,10 +121,44 @@ $info-box-border-radius: 0.3rem;
 $info-box-shadow: 0px 0px 10px 1px $strong-eletric-violet;
 
 
-$link-a-font-size: calc(0.8rem + 0.3vw);
+$links-margin: 3rem;
 
 
-$social-bg-color-hover: $dark-eletric-violet;
+$link-margin: 0.7rem auto;
+$link-width: 300px;
+
+
+$link-img-margin: 0.7rem;
+
+
+$menu-bg-color: $transparent-violet;
+$menu-bottom: 0;
+$menu-hidden-display: none;
+$menu-visible-display: block;
+$menu-left: 0;
+$menu-right: 0;
+$menu-position: fixed;
+$menu-top: 60px;
+$menu-z-index: 10;
+
+
+$menu-a-display: inline-block;
+$menu-a-margin: 0.8rem 0rem;
+$menu-a-text-transform: uppercase;
+
+
+$menu-container-bg-color: $black;
+$menu-container-height: 100%;
+$menu-container-width: 80vw;
+
+
+$social-margin: 2rem;
+
+
+$social-a-margin: 0rem 0.4rem;
+
+
+$social-img-bg-color-hover: $dark-eletric-violet;
 $social-img-height-width: calc(2.1rem + 1vw);
 
 

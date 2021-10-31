@@ -1,8 +1,8 @@
 .home {
   @include flex-box($direction: column);
   background-color: $black;
-  min-height: calc(100vh - 60px);
-  padding: 1rem 0rem;
+  min-height: $home-min-height;
+  padding: $home-padding;
 
   .my-photo {
     animation: $home-photo-animation;
@@ -42,17 +42,17 @@
 
 .social {
   @include flex-box;
-  margin-top: 30px;
+  margin-top: $social-margin;
 
   a {
-    margin: 0rem 0.4rem;
+    margin: $social-a-margin;
   }
 
   img {
     @include icon-imgs($social-img-height-width, $social-img-height-width, $grey);
     transition: background-color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
     &:hover {
-      background-color: $social-bg-color-hover;
+      background-color: $social-img-bg-color-hover;
     }
   }
 }

@@ -10,28 +10,28 @@
     line-height: $text-height;
   }
 
-  .links {
-    margin-top: 50px;
+  a {
+    @include reset-a-style($grey);
+    border-bottom: $contact-a-border;
+    font-size: $contact-a-font-size;
+
+    &:hover {
+      border-bottom: $contact-a-border-hover;
+    }
   }
 
+  .links {
+    margin-top: $links-margin;
+  }
+  
   .link {
     @include flex-box($justify: flex-start);
-    margin: 10px auto;
-    width: 300px;
-
+    margin: $link-margin;
+    width: $link-width;
+  
     img {
       @include icon-imgs(auto, 35px, transparent);
-      margin-right: 10px;
-    }
-
-    a {
-      @include reset-a-style($grey);
-      border: solid 1px transparent;
-      font-size: $link-a-font-size;
-
-      &:hover {
-        border-bottom: solid 1px $grey;
-      }
+      margin-right: $link-img-margin;
     }
   }
 }

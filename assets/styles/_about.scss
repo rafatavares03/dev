@@ -1,8 +1,8 @@
 .about {
-  background-color: $dark-grey;
-  border-top: $border-thin;
-  border-bottom: $border-thin;
-  padding: 2.5rem 1rem;
+  background-color: $about-bg-color;
+  border-top: $about-border;
+  border-bottom: $about-border;
+  padding: $about-padding;
 
   .about-container {
     @include flex-box($direction: column);
@@ -49,8 +49,8 @@
 .technology {
   @include info-box;
   @include text-and-h1(center, $about-box-h1-font-size);
-  margin-top: 2rem;
-  width: 100%;
+  margin-top: $boxes-margin;
+  width: $boxes-width;
 
   .technologies {
     @include flex-box(column, space-between, center);
@@ -62,11 +62,13 @@
 .tools {
   @include info-box;
   @include text-and-h1(center, $about-box-h1-font-size);
-  margin-top: 2rem;
-  width: 100%;
+  margin-top: $boxes-margin;
+  width: $boxes-width;
 
   .tools-imgs {
     @include flex-box(column, space-between, center);
+    flex-wrap: wrap;
+    max-height: 280px;
   }
 }
 
