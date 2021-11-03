@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap");
-/* 
-border-radius: calc(0.3rem + 0.2vw);
-height: calc(2.5rem + 1vw);
-padding: calc(1px + 0.05vw);
-width: calc(2.5rem + 1vw);
-*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -343,10 +337,83 @@ body {
 .projects {
   background-color: #000;
   border-bottom: solid 1px #8707F0;
-  padding: 100px 0px;
-  /* mudar depois */
+  padding: 3rem 0.2rem;
   text-align: center;
-  /* mudar depois */
+}
+
+.projects h3 {
+  font-size: calc(0.8rem + 0.5vw);
+  font-weight: 400;
+}
+
+.project {
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 90%;
+}
+
+.project img {
+  height: auto;
+  width: 100%;
+}
+
+.project li {
+  background-color: #222;
+  border-radius: 1.3rem;
+  color: #cd91ff;
+  font-size: calc(0.8rem + 0.2vw);
+  list-style: none;
+  margin: 0.3rem 0.5rem;
+  padding: 0.3rem 0.8rem;
+}
+
+.project p {
+  color: #222;
+  font-size: calc(0.9rem + 0.3vw);
+  text-align: center;
+}
+
+.project .project-technologies {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project .project-info {
+  background-color: #cd91ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ce92ff), color-stop(#bf84ec), color-stop(#af76d9), color-stop(#a068c7), to(#915bb5));
+  background-image: linear-gradient(to bottom, #ce92ff, #bf84ec, #af76d9, #a068c7, #915bb5);
+  margin-top: -5px;
+  padding: 0.5rem 0.2rem;
+}
+
+.project .project-title {
+  color: #000;
+  font-size: calc(1.5rem + 0.5vw);
+  margin: 0.5rem;
+}
+
+.project .project-link {
+  color: #cd91ff;
+  text-decoration: none;
+  background-color: #000;
+  display: inline-block;
+  margin: 1rem 0.3rem;
+  padding: 0.5rem 0.9rem;
 }
 
 .contact {

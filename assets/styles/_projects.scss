@@ -1,6 +1,68 @@
 .projects {
-  background-color: $black;
+  background-color: $projects-bg-color;
   border-bottom: $border-thin;
-  padding: 100px 0px; /* mudar depois */
-  text-align: center; /* mudar depois */
+  padding: $projects-padding;
+  text-align: $projects-text-align;
+
+
+  h3 {
+    font-size: $projects-h3-font-size;
+    font-weight: $projects-h3-font-weight;
+  }
+}
+
+.project {
+  border-radius: $project-border-radius;
+  margin: $project-margin;
+  margin-top: $project-margin-top;
+  overflow: $project-overflow;
+  width: $project-width;
+
+  
+  img {
+    height: $project-img-height;
+    width: $project-img-width;
+  }
+  
+  li {
+    background-color: $project-li-bg-color;
+    border-radius: $project-li-border-radius;
+    color: $project-li-color;
+    font-size: $project-li-font-size;
+    list-style: $no-list-style;
+    margin: $project-li-margin;
+    padding: $project-li-padding;
+  }
+
+  p {
+    color: $project-p-color;
+    font-size: $project-p-font-size;
+    text-align: $project-p-text-align;
+  }
+
+  .project-technologies {
+    @include flex-box;
+    flex-wrap: wrap;
+  }
+
+  .project-info {
+    background-color: $project-info-bg-color;
+    background-image: $project-info-bg;
+    margin-top: $project-info-margin;
+    padding: $project-info-padding;
+  }
+
+    .project-title {
+      color: $project-h1-color;
+      font-size: $project-h1-font-size;
+      margin: $project-h1-margin;
+    }
+
+    .project-link {
+      @include reset-a-style($project-link-color);
+      background-color: $project-link-bg-color;
+      display: $project-link-display;
+      margin: $project-link-margin;
+      padding: $project-link-padding;
+    }
 }

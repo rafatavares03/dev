@@ -2,12 +2,16 @@ $white: #fff;
 $grey: #aaa;
 $light-grey: #ccc;
 $transparent-violet: #8707f033;
+$light-violet: #cd91ff;
 $light-eletric-violet: #9a36ec;
 $strong-eletric-violet: #8707F0;
 $dark-eletric-violet: #6d03f8;
 $transparent-dark-grey: #3335;
 $dark-grey: #222;
 $black: #000;
+
+
+$purple-gradient: linear-gradient(to bottom, #ce92ff, #bf84ec, #af76d9, #a068c7, #915bb5);
 
 
 
@@ -18,6 +22,7 @@ $font-family: 'Montserrat', sans-serif;;
 $font-thin: 200;
 $no-border: 0;
 $no-margin: 0;
+$no-list-style: none;
 $no-padding: 0;
 $no-txt-decoration: none;
 $text-height: calc(1.5rem + 0.5vw);
@@ -153,6 +158,57 @@ $menu-container-height: 100%;
 $menu-container-width: 80vw;
 
 
+$projects-bg-color: $black;
+$projects-padding: 3rem 0.2rem;
+$projects-text-align: center;
+
+
+$projects-h3-font-size: calc(0.8rem + 0.5vw);
+$projects-h3-font-weight: 400;
+
+
+$project-border-radius: 1rem;
+$project-margin: auto;
+$project-margin-top: 2rem;
+$project-overflow: hidden;
+$project-width: 90%;
+
+
+$project-h1-color: $black;
+$project-h1-font-size: calc(1.5rem + 0.5vw);
+$project-h1-margin: 0.5rem;
+
+
+$project-img-height: auto;
+$project-img-width: 100%;
+
+
+$project-info-bg: $purple-gradient;
+$project-info-bg-color: $light-violet;
+$project-info-margin: -5px;
+$project-info-padding: 0.5rem 0.2rem;
+
+
+$project-li-bg-color: $dark-grey;
+$project-li-border-radius: 1.3rem;
+$project-li-color: $light-violet;
+$project-li-font-size: calc(0.8rem + 0.2vw);
+$project-li-margin: 0.3rem 0.5rem;
+$project-li-padding: 0.3rem 0.8rem;
+
+
+$project-link-bg-color: $black;
+$project-link-color: $light-violet;
+$project-link-display: inline-block;
+$project-link-margin: 1rem 0.3rem;
+$project-link-padding: 0.5rem 0.9rem;
+
+
+$project-p-color: $dark-grey;
+$project-p-font-size: calc(0.9rem + 0.3vw);
+$project-p-text-align: center;
+
+
 $social-margin: 2rem;
 
 
@@ -170,10 +226,3 @@ $tech-imgs-margin: 0.9rem;
 $laptop: 1100px;
 $tablet: 780px;
 $mobile: 480px;
-
-/* 
-border-radius: calc(0.3rem + 0.2vw);
-height: calc(2.5rem + 1vw);
-padding: calc(1px + 0.05vw);
-width: calc(2.5rem + 1vw);
-*/
