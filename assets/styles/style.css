@@ -27,6 +27,7 @@ body {
 .header a {
   color: #fff;
   text-decoration: none;
+  font-size: calc(1rem + 0.1vw);
   padding: 0rem 0.4rem;
   -webkit-transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
   transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
@@ -480,7 +481,91 @@ body {
   text-align: center;
 }
 
-/*@include mediaquery-laptop;
-@include mediaquery-tablet;
-@include mediaquery-mobile;*/
+@media screen and (min-width: 790px) {
+  .header nav {
+    display: block;
+  }
+  .header .header-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header .menu-button {
+    display: none;
+  }
+  .about .about-container {
+    display: -ms-grid;
+    display: grid;
+    gap: 50px;
+    -ms-grid-columns: 50ch 1fr;
+        grid-template-columns: 50ch 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    margin: auto;
+    max-width: 85vw;
+  }
+  .about .about-text {
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    margin: auto;
+  }
+  .about .technology {
+    grid-column: 0.66667;
+    grid-row: 0.5;
+    margin: auto;
+  }
+  .about .tools {
+    grid-column: 0.66667;
+    grid-row: 0.66667;
+    margin: auto;
+  }
+  .project {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 20rem;
+    max-width: 85vw;
+  }
+  .project img {
+    height: 100%;
+    max-width: 45%;
+  }
+  .project .project-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

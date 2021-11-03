@@ -7,11 +7,12 @@
 
 
   nav {
-    display: none;
+    display: $header-nav-hidden;
   }
 
   a {
     @include reset-a-style;
+    font-size: $header-a-font-size;
     padding: $header-a-padding;
     transition: color 1s cubic-bezier(0.61, 1, 0.88, 1) 0.3s;
     text-transform: $header-a-text-transform;
@@ -28,7 +29,7 @@
   }
 
   .menu-button {
-    display: block;
+    display: $header-button-visible;
     height: $header-button-size;
     width: $header-button-size;
   }

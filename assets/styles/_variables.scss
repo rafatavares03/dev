@@ -45,14 +45,24 @@ $about-border: $border-thin;
 $about-padding: 2.5rem 1rem;
 
 
+$about-box-grid-column: 2 / 3;
 $about-box-h1-font-size: calc(2.1rem + 1vw);
 $about-h1-margin: 1.2rem 0rem 1.5rem 0rem;
+
+
+$about-container-gap: 50px;
+$about-container-grid: grid;
+$about-container-columns: 50ch 1fr;
+$about-container-rows: 1fr 1fr;
+$about-container-margin: auto;
+$about-container-max-width: 85vw;
 
 
 $about-text-color: $light-grey;
 $about-text-font-size: calc(0.8rem + 0.4vw);
 $about-text-h1-font-size: calc(2.2rem + 1vw);
 $about-text-margin: 0.5rem;
+$about-text-grid-span: span 2;
 
 
 $body-font-family: $font-family;
@@ -88,11 +98,18 @@ $header-position: sticky;
 $header-top: 0;
 
 
+$header-a-font-size: calc(1rem + 0.1vw);
 $header-a-padding: 0rem 0.4rem;
 $header-a-text-transform: uppercase;
 
 
+$header-button-hidden: none;
 $header-button-size: 40px;
+$header-button-visible: block;
+
+
+$header-nav-hidden: none;
+$header-nav-visible: block;
 
 
 $home-min-height: calc(100vh - 60px);
@@ -174,6 +191,10 @@ $project-overflow: hidden;
 $project-width: 90%;
 
 
+$project-media-height: 20rem;
+$project-media-max-width: 85vw;
+
+
 $project-h1-color: $black;
 $project-h1-font-size: calc(1.5rem + 0.5vw);
 $project-h1-margin: 0.5rem;
@@ -181,6 +202,10 @@ $project-h1-margin: 0.5rem;
 
 $project-img-height: auto;
 $project-img-width: 100%;
+
+
+$project-img-media-height: 100%;
+$project-img-media-max-width: 45%;
 
 
 $project-info-bg: $purple-gradient;
@@ -220,9 +245,7 @@ $social-img-height-width: calc(2.1rem + 1vw);
 
 
 $tech-imgs-margin: 0.9rem;
+$tech-row: 1 / 2;
 
 
-
-$laptop: 1100px;
-$tablet: 780px;
-$mobile: 480px;
+$tools-row: 2 / 3;

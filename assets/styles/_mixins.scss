@@ -53,3 +53,66 @@
     margin-top: $about-text-margin;
   }
 }
+
+@mixin media-laptop-desktop {
+  @media screen and (min-width: 790px) {
+    .header {
+      nav {
+        display: $header-nav-visible;
+      }
+
+      .header-container {
+        @include flex-box($justify: flex-end);
+      }
+
+      .menu-button {
+        display: $header-button-hidden;
+      }
+    }
+
+    .about {
+      .about-container {
+        display: $about-container-grid;
+        gap: $about-container-gap;
+        grid-template-columns: $about-container-columns;
+        grid-template-rows: $about-container-rows;
+        margin: $about-container-margin;
+        max-width: $about-container-max-width;
+      }
+
+      .about-text {
+        grid-row-end:$about-text-grid-span;
+        margin: auto;
+      }
+
+      .technology {
+        grid-column: $about-box-grid-column;
+        grid-row: $tech-row;
+        margin: auto;
+      }
+
+      .tools {
+        grid-column: $about-box-grid-column;
+        grid-row: $tools-row;
+        margin: auto;
+      }
+    }
+
+    .project {
+      @include flex-box;
+      height: $project-media-height;
+      max-width: $project-media-max-width;
+
+      img {
+        height: $project-img-media-height;
+        max-width: $project-img-media-max-width;
+      }
+
+      .project-info {
+        @include flex-box($direction: column, $justify: space-between);
+        height: 100%;
+        margin-top: $no-margin;
+      }
+    }
+  }
+}
