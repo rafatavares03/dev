@@ -40,7 +40,6 @@
 @mixin text-and-h1($align, $size) {
   text-align: $align;
 
-
   h1 {
     font-size: $size;
     margin: $about-h1-margin;
@@ -54,7 +53,7 @@
   }
 }
 
-@mixin media-laptop-desktop {
+@mixin media-laptop {
   @media screen and (min-width: 790px) {
     .header {
       nav {
@@ -74,26 +73,26 @@
       .about-container {
         display: $about-container-grid;
         gap: $about-container-gap;
-        grid-template-columns: $about-container-columns;
+        grid-template-columns: $about-container-columns-laptop;
         grid-template-rows: $about-container-rows;
         margin: $about-container-margin;
         max-width: $about-container-max-width;
       }
 
       .about-text {
-        grid-row-end:$about-text-grid-span;
+        grid-row-end: $about-text-grid-span;
         margin: auto;
       }
 
       .technology {
-        grid-column: $about-box-grid-column;
-        grid-row: $tech-row;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
         margin: auto;
       }
 
       .tools {
-        grid-column: $about-box-grid-column;
-        grid-row: $tools-row;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
         margin: auto;
       }
     }
@@ -112,6 +111,27 @@
         @include flex-box($direction: column, $justify: space-between);
         height: 100%;
         margin-top: $no-margin;
+      }
+    }
+  }
+}
+
+@mixin media-desktop {
+  @media screen and (min-width: 1050px) {
+    .about {
+      .about-container {
+        grid-template-columns: $about-container-columns-desktop;
+      }
+    }
+  }
+}
+
+@mixin media-4k-device {
+  @media screen and (min-width: 2000px) {
+    .about {
+      .about-container {
+        column-gap: 10rem;
+        grid-template-columns: $about-container-columns-4k;
       }
     }
   }

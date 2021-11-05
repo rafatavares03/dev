@@ -24,7 +24,8 @@
   .technologies {
     @include flex-box(column, space-between, center);
     flex-wrap: wrap;
-    max-height: 280px;
+    min-height: 280px;
+    max-height: 320px;
   }
 }
 
@@ -37,6 +38,7 @@
   .tools-imgs {
     @include flex-box(column, space-between, center);
     flex-wrap: wrap;
-    max-height: 280px;
+    min-height: 280px;
+    max-height: 320px;
   }
 }

@@ -45,14 +45,15 @@ $about-border: $border-thin;
 $about-padding: 2.5rem 1rem;
 
 
-$about-box-grid-column: 2 / 3;
 $about-box-h1-font-size: calc(2.1rem + 1vw);
 $about-h1-margin: 1.2rem 0rem 1.5rem 0rem;
 
 
 $about-container-gap: 50px;
 $about-container-grid: grid;
-$about-container-columns: 50ch 1fr;
+$about-container-columns-4k: 50ch 700px;
+$about-container-columns-desktop: 50ch 1fr;
+$about-container-columns-laptop: 40ch 1fr;
 $about-container-rows: 1fr 1fr;
 $about-container-margin: auto;
 $about-container-max-width: 85vw;
@@ -245,7 +246,3 @@ $social-img-height-width: calc(2.1rem + 1vw);
 
 
 $tech-imgs-margin: 0.9rem;
-$tech-row: 1 / 2;
-
-
-$tools-row: 2 / 3;
